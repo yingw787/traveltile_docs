@@ -1,4 +1,4 @@
-baseurl = "https://yingw787.github.io/traveltile_docs"
+baseurl = "https://yingw787.github.io/traveltile_docs/"
 languageCode = "en-us"
 title = "Traveltile Docs"
 theme = "hugo-material-docs"
