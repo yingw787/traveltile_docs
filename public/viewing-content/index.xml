@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Viewing-content-rsses on Traveltile Docs</title>
+    <link>https://yingw787.github.io/traveltile_docs/viewing-content/index.xml</link>
+    <description>Recent content in Viewing-content-rsses on Traveltile Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Sun, 30 Oct 2016 17:42:05 -0400</lastBuildDate>
+    <atom:link href="https://yingw787.github.io/traveltile_docs/viewing-content/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Viewing content</title>
+      <link>https://yingw787.github.io/traveltile_docs/viewing-content/</link>
+      <pubDate>Sun, 30 Oct 2016 17:42:05 -0400</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/viewing-content/</guid>
+      <description>
+
+&lt;h2 id=&#34;select-traveltile&#34;&gt;Select Traveltile&lt;/h2&gt;
+
+&lt;p&gt;From the home screen, navigate to the browser window by clicking on the &amp;ldquo;Browse Tiles&amp;rdquo; button. The browser window should appear after a small delay, which should look like a collection of Traveltiles:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_browser_upper.png&#34; alt=&#34;Traveltile Browser Initial View&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just select the Traveltile you want to look at closer by clicking on it. To select a particular Traveltile, click on the carousel selectors at the bottom of the page. In order to edit a particular Traveltile, click on the &amp;ldquo;Edit Selected Tile&amp;rdquo; button. It will take you to the editor window with data preloaded from the selected Traveltile. In order to delete a particular Traveltile, click on the &amp;ldquo;Delete Selected Tile&amp;rdquo; button. Upon confirmation, it will then delete the selected Traveltile.&lt;/p&gt;
+
+&lt;h2 id=&#34;view-traveltile-map-and-photos&#34;&gt;View Traveltile map and photos&lt;/h2&gt;
+
+&lt;p&gt;Click on the &amp;ldquo;Next&amp;rdquo; buttons in order to look at photos from a particular Traveltile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_japan_map_and_photos.gif&#34; alt=&#34;Traveltile Japan Map and Photos&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;view-traveltile-finances-itinerary-and-notes&#34;&gt;View Traveltile finances, itinerary, and notes&lt;/h2&gt;
+
+&lt;p&gt;Click on the particular card that you wish to explore further. The material is locked so as to avoid changing state within the browser window.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_japan_other_features.gif&#34; alt=&#34;Traveltile Japan Other Features&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

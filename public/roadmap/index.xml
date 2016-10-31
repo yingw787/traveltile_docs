@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roadmap-rsses on Traveltile Docs</title>
+    <link>https://yingw787.github.io/traveltile_docs/roadmap/index.xml</link>
+    <description>Recent content in Roadmap-rsses on Traveltile Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 20:08:11 +0100</lastBuildDate>
+    <atom:link href="https://yingw787.github.io/traveltile_docs/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://yingw787.github.io/traveltile_docs/roadmap/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/roadmap/</guid>
+      <description>
+
+&lt;p&gt;This application&amp;rsquo;s focus is on design and prototyping; several major features are needed before the application can be considered production-ready.&lt;/p&gt;
+
+&lt;h2 id=&#34;user-accounts-authentication&#34;&gt;User accounts/authentication&lt;/h2&gt;
+
+&lt;p&gt;As of now, all created tiles are globally available, and anybody can edit any tile that is within the browser. Authentication using Facebook&amp;rsquo;s Login API to create differentiated user accounts, and the subsequent display of tile subsets limited to the creator and his friend network, will dramatically improve the security, focus, and overall quality of this application.&lt;/p&gt;
+
+&lt;h2 id=&#34;mobile-compatibility&#34;&gt;Mobile compatibility&lt;/h2&gt;
+
+&lt;p&gt;This project was designed for Chrome on Desktop, and is not compatible with either iOS or Android. A port of this application for use on WebKit is highly desirable.&lt;/p&gt;
+
+&lt;h2 id=&#34;database-security&#34;&gt;Database Security&lt;/h2&gt;
+
+&lt;p&gt;Current SQL queries are built with string concatenation. Future versions of this application will likely use a database ORM.&lt;/p&gt;
+
+&lt;h2 id=&#34;migration-of-image-hosting-from-filestack-to-aws-s3&#34;&gt;Migration of Image Hosting from FileStack to AWS S3&lt;/h2&gt;
+
+&lt;p&gt;The current FileStack solution has been unsatisfactory in terms of latency, cost, and scalability. S3 would offer similar benefits as FileStack, Cloudinary, or a similar image hosting service, but with dynamic pricing, better security, and higher uptime determined by an SLA.&lt;/p&gt;
+
+&lt;h2 id=&#34;google-maps-markers&#34;&gt;Google Maps markers&lt;/h2&gt;
+
+&lt;p&gt;The Google Maps component supports the usage of markers; with this and relevant EXIF data from images in the photo album, a trace of the locations traveled to can be presented on the map, providing users with an understanding of the exact geographic locations of the trip.&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;This project is not maintained by me at the moment. If you would like to become the primary maintainer of this application, please fork the application and email me so I can redirect requests and update this webpage. Additionally, please feel free to submit a new &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/issues&#34;&gt;issue&lt;/a&gt; if you happen to see a bug or a &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/pulls&#34;&gt;pull request&lt;/a&gt; to suggest a new feature or patch.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

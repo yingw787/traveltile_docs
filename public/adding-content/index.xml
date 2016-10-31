@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adding-content-rsses on Traveltile Docs</title>
+    <link>https://yingw787.github.io/traveltile_docs/adding-content/index.xml</link>
+    <description>Recent content in Adding-content-rsses on Traveltile Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 19:56:50 +0100</lastBuildDate>
+    <atom:link href="https://yingw787.github.io/traveltile_docs/adding-content/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Adding content</title>
+      <link>https://yingw787.github.io/traveltile_docs/adding-content/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/adding-content/</guid>
+      <description>
+
+&lt;h2 id=&#34;create-your-traveltile&#34;&gt;Create your Traveltile&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s create a new Traveltile. To begin, navigate from the home screen to the editor window by clicking on the &amp;ldquo;Build your own tile&amp;rdquo; button. You&amp;rsquo;ll see the editor below. The map is currently centered on the United States; the functionality to change this from the GUI isn&amp;rsquo;t present at this time, but you can alter the centering of the map as well as the zoom level for each individual tile from the codebase. There are also empty cards for your finances, itinerary, and notes displayed along with the option to save your Traveltile to the library or cancel any updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_upper.png&#34; alt=&#34;Traveltile Editor Initial View&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-photos&#34;&gt;Add your photos&lt;/h2&gt;
+
+&lt;p&gt;To add or delete a photo from your Traveltile, click on the &amp;ldquo;Upload Photos&amp;rdquo; button below the map and select an image from your computer. Any photos added will be uploaded and saved in a first-come-first-serve basis. In order to delete a photo from the album, click on the gray &amp;ldquo;X&amp;rdquo; in the top right corner.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_map_and_photos.gif&#34; alt=&#34;Traveltile Editor Map and Photos&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-finances&#34;&gt;Add your finances&lt;/h2&gt;
+
+&lt;p&gt;To add in your own finances to your Traveltile, click on the &amp;ldquo;Finances&amp;rdquo; card. It will open up a dialog, with a blank space and five predetermined categorical text fields relevant to travel: Food, Housing, Attractions, Transportation, and Other. Input your values (listed currently as U.S. dollars) into the text fields. The blank space will reveal a dynamically updating chart with the categories you select. You must update the chart before updating the finances of your Traveltile. The application will tell you if you enter in an invalid format in the text field. After you close the dialog, the finance card will update with the latest aggregated cost of your trip.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_finances.gif&#34; alt=&#34;Traveltile Editor Finances&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-itinerary&#34;&gt;Add your itinerary&lt;/h2&gt;
+
+&lt;p&gt;To add in your itinerary to your Traveltile, click on the &amp;ldquo;Itinerary&amp;rdquo; card. It will open a blank dialog. Upon clicking on the add button, a calendar card will appear, with an option to enter in a date. Other functionality in the calendar cards has not been built out yet. When you save the itinerary, the itinerary card will update with the number of days your trip takes (calculated as the number of calendar tiles you have created).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_itinerary.gif&#34; alt=&#34;Traveltile Editor Itinerary&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-notes&#34;&gt;Add your notes&lt;/h2&gt;
+
+&lt;p&gt;To add your notes to your Traveltile, click on the &amp;ldquo;Notes&amp;rdquo; card. It will open up a blank dialog card, where you can begin typing. Newlines are saved in the dialog but not displayed in the notes card.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_notes.gif&#34; alt=&#34;Traveltile Editor Notes&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;create-or-discard-your-traveltile&#34;&gt;Create or discard your Traveltile&lt;/h2&gt;
+
+&lt;p&gt;To create your Traveltile, all you need to do at this point is to click on the &amp;ldquo;Create Traveltile&amp;rdquo; button. This will route you to the Browser window, where your Traveltile will be located among others that you have created. If you do not wish to save your Traveltile, click on the &amp;ldquo;Discard Draft&amp;rdquo; button, which will discard your changes and return you to the main menu. In the demonstration shown below, the functionality to create your Traveltile has been disabled because of usage concerns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_create_discard.gif&#34; alt=&#34;Traveltile Editor Create or Discard&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
