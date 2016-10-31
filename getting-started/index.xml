@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting-started-rsses on Traveltile Docs</title>
+    <link>https://yingw787.github.io/traveltile_docs/getting-started/index.xml</link>
+    <description>Recent content in Getting-started-rsses on Traveltile Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    <atom:link href="https://yingw787.github.io/traveltile_docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://yingw787.github.io/traveltile_docs/getting-started/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/getting-started/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;Clone the project from &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   git clone https://github.com/yingw787/traveltile_opensrc.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Install NPM dependencies within the directory. Make sure you have up to date Node and NPM versions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   cd traveltile_opensrc
+   npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;third-party-apis&#34;&gt;Third-party APIs&lt;/h3&gt;
+
+&lt;p&gt;This project relies on the Google Maps API, the FileStack API, and a running PostgreSQL instance. You can get a Google Maps API key from &lt;a href=&#34;https://console.developers.google.com/&#34;&gt;the Google API Console&lt;/a&gt;, and you can get a FileStack API key from &lt;a href=&#34;https://www.filestack.com/&#34;&gt;their website&lt;/a&gt;. If you use OS X, you can download and use &lt;a href=&#34;http://postgresapp.com/&#34;&gt;PostgresApp&lt;/a&gt;, and if not (or if you prefer a global PostgreSQL instance), you can use &lt;a href=&#34;https://www.elephantsql.com/&#34;&gt;ElephantSQL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fill in the API keys as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The PostgreSQL URL inside &lt;code&gt;projectroot/config/applicationConfig.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Google Maps API key inside &lt;code&gt;projectroot/public/js/config/apiKeys.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The FileStack API key inside &lt;code&gt;projectroot/public/js/models/EditorTilesModel.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;remove-demonstration-mode&#34;&gt;Remove demonstration mode&lt;/h3&gt;
+
+&lt;p&gt;Currently, sections of &lt;code&gt;projectroot/public/js/models/EditorTilesModel&lt;/code&gt; and &lt;code&gt;projectroot/public/js/models/BrowserTilesModel.js&lt;/code&gt; are commented out as part of demonstration mode. In order to enable saving from the editor and deletion and editing from the browser, said code blocks must be uncommented.&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;In your Terminal, type&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   npm run start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to start Webpack and run the project. Open up your browser, go to &lt;code&gt;localhost:8080&lt;/code&gt; in order to see the application in action!&lt;/p&gt;
+
+&lt;h2 id=&#34;questions-comments-concerns&#34;&gt;Questions/Comments/Concerns&lt;/h2&gt;
+
+&lt;p&gt;Please submit any questions, comments, or concerns about this setup procedure as an &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/issues&#34;&gt;issue&lt;/a&gt; on the repository.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

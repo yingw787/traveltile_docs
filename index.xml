@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traveltile Docs</title>
+    <link>https://yingw787.github.io/traveltile_docs/index.xml</link>
+    <description>Recent content on Traveltile Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Tue, 08 Mar 2016 21:07:13 +0100</lastBuildDate>
+    <atom:link href="https://yingw787.github.io/traveltile_docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Traveltile</title>
+      <link>https://yingw787.github.io/traveltile_docs/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/</guid>
+      <description>
+
+&lt;h2 id=&#34;beautiful-travel-helpers&#34;&gt;Beautiful travel helpers&lt;/h2&gt;
+
+&lt;p&gt;Traveltile helps you compose, remember, and share trips. It is inspired by Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/design/spec/material-design/introduction.html&#34;&gt;material design&lt;/a&gt;
+guidelines, cross-browser compatible, and easy to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_home_page.png&#34; alt=&#34;Traveltile Home Page Screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+
+&lt;p&gt;Install with &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git clone https://github.com/yingw787/traveltile_opensrc.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Last but not least, a big thank you to &lt;a href=&#34;https://github.com/fabioberger&#34;&gt;Fabio Berger&lt;/a&gt;. He assisted me in massively improving my code quality, and this project&amp;rsquo;s success would not be possible without him.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;Digital Craftsman&lt;/a&gt; for creating the &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-material-docs&#34;&gt;Material Design Docs Theme&lt;/a&gt; that is used to design this webpage, in addition to &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt; for creating Hugo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://yingw787.github.io/traveltile_docs/getting-started/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/getting-started/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;Clone the project from &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   git clone https://github.com/yingw787/traveltile_opensrc.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Install NPM dependencies within the directory. Make sure you have up to date Node and NPM versions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   cd traveltile_opensrc
+   npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;third-party-apis&#34;&gt;Third-party APIs&lt;/h3&gt;
+
+&lt;p&gt;This project relies on the Google Maps API, the FileStack API, and a running PostgreSQL instance. You can get a Google Maps API key from &lt;a href=&#34;https://console.developers.google.com/&#34;&gt;the Google API Console&lt;/a&gt;, and you can get a FileStack API key from &lt;a href=&#34;https://www.filestack.com/&#34;&gt;their website&lt;/a&gt;. If you use OS X, you can download and use &lt;a href=&#34;http://postgresapp.com/&#34;&gt;PostgresApp&lt;/a&gt;, and if not (or if you prefer a global PostgreSQL instance), you can use &lt;a href=&#34;https://www.elephantsql.com/&#34;&gt;ElephantSQL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fill in the API keys as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The PostgreSQL URL inside &lt;code&gt;projectroot/config/applicationConfig.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Google Maps API key inside &lt;code&gt;projectroot/public/js/config/apiKeys.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The FileStack API key inside &lt;code&gt;projectroot/public/js/models/EditorTilesModel.js&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;remove-demonstration-mode&#34;&gt;Remove demonstration mode&lt;/h3&gt;
+
+&lt;p&gt;Currently, sections of &lt;code&gt;projectroot/public/js/models/EditorTilesModel&lt;/code&gt; and &lt;code&gt;projectroot/public/js/models/BrowserTilesModel.js&lt;/code&gt; are commented out as part of demonstration mode. In order to enable saving from the editor and deletion and editing from the browser, said code blocks must be uncommented.&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;In your Terminal, type&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;   npm run start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to start Webpack and run the project. Open up your browser, go to &lt;code&gt;localhost:8080&lt;/code&gt; in order to see the application in action!&lt;/p&gt;
+
+&lt;h2 id=&#34;questions-comments-concerns&#34;&gt;Questions/Comments/Concerns&lt;/h2&gt;
+
+&lt;p&gt;Please submit any questions, comments, or concerns about this setup procedure as an &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/issues&#34;&gt;issue&lt;/a&gt; on the repository.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adding content</title>
+      <link>https://yingw787.github.io/traveltile_docs/adding-content/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/adding-content/</guid>
+      <description>
+
+&lt;h2 id=&#34;create-your-traveltile&#34;&gt;Create your Traveltile&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s create a new Traveltile. To begin, navigate from the home screen to the editor window by clicking on the &amp;ldquo;Build your own tile&amp;rdquo; button. You&amp;rsquo;ll see the editor below. The map is currently centered on the United States; the functionality to change this from the GUI isn&amp;rsquo;t present at this time, but you can alter the centering of the map as well as the zoom level for each individual tile from the codebase. There are also empty cards for your finances, itinerary, and notes displayed along with the option to save your Traveltile to the library or cancel any updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_upper.png&#34; alt=&#34;Traveltile Editor Initial View&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-photos&#34;&gt;Add your photos&lt;/h2&gt;
+
+&lt;p&gt;To add or delete a photo from your Traveltile, click on the &amp;ldquo;Upload Photos&amp;rdquo; button below the map and select an image from your computer. Any photos added will be uploaded and saved in a first-come-first-serve basis. In order to delete a photo from the album, click on the gray &amp;ldquo;X&amp;rdquo; in the top right corner.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_map_and_photos.gif&#34; alt=&#34;Traveltile Editor Map and Photos&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-finances&#34;&gt;Add your finances&lt;/h2&gt;
+
+&lt;p&gt;To add in your own finances to your Traveltile, click on the &amp;ldquo;Finances&amp;rdquo; card. It will open up a dialog, with a blank space and five predetermined categorical text fields relevant to travel: Food, Housing, Attractions, Transportation, and Other. Input your values (listed currently as U.S. dollars) into the text fields. The blank space will reveal a dynamically updating chart with the categories you select. You must update the chart before updating the finances of your Traveltile. The application will tell you if you enter in an invalid format in the text field. After you close the dialog, the finance card will update with the latest aggregated cost of your trip.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_finances.gif&#34; alt=&#34;Traveltile Editor Finances&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-itinerary&#34;&gt;Add your itinerary&lt;/h2&gt;
+
+&lt;p&gt;To add in your itinerary to your Traveltile, click on the &amp;ldquo;Itinerary&amp;rdquo; card. It will open a blank dialog. Upon clicking on the add button, a calendar card will appear, with an option to enter in a date. Other functionality in the calendar cards has not been built out yet. When you save the itinerary, the itinerary card will update with the number of days your trip takes (calculated as the number of calendar tiles you have created).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_itinerary.gif&#34; alt=&#34;Traveltile Editor Itinerary&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-notes&#34;&gt;Add your notes&lt;/h2&gt;
+
+&lt;p&gt;To add your notes to your Traveltile, click on the &amp;ldquo;Notes&amp;rdquo; card. It will open up a blank dialog card, where you can begin typing. Newlines are saved in the dialog but not displayed in the notes card.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_notes.gif&#34; alt=&#34;Traveltile Editor Notes&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;create-or-discard-your-traveltile&#34;&gt;Create or discard your Traveltile&lt;/h2&gt;
+
+&lt;p&gt;To create your Traveltile, all you need to do at this point is to click on the &amp;ldquo;Create Traveltile&amp;rdquo; button. This will route you to the Browser window, where your Traveltile will be located among others that you have created. If you do not wish to save your Traveltile, click on the &amp;ldquo;Discard Draft&amp;rdquo; button, which will discard your changes and return you to the main menu. In the demonstration shown below, the functionality to create your Traveltile has been disabled because of usage concerns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_editor_create_discard.gif&#34; alt=&#34;Traveltile Editor Create or Discard&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Viewing content</title>
+      <link>https://yingw787.github.io/traveltile_docs/viewing-content/</link>
+      <pubDate>Sun, 30 Oct 2016 17:42:05 -0400</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/viewing-content/</guid>
+      <description>
+
+&lt;h2 id=&#34;select-traveltile&#34;&gt;Select Traveltile&lt;/h2&gt;
+
+&lt;p&gt;From the home screen, navigate to the browser window by clicking on the &amp;ldquo;Browse Tiles&amp;rdquo; button. The browser window should appear after a small delay, which should look like a collection of Traveltiles:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_browser_upper.png&#34; alt=&#34;Traveltile Browser Initial View&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just select the Traveltile you want to look at closer by clicking on it. To select a particular Traveltile, click on the carousel selectors at the bottom of the page. In order to edit a particular Traveltile, click on the &amp;ldquo;Edit Selected Tile&amp;rdquo; button. It will take you to the editor window with data preloaded from the selected Traveltile. In order to delete a particular Traveltile, click on the &amp;ldquo;Delete Selected Tile&amp;rdquo; button. Upon confirmation, it will then delete the selected Traveltile.&lt;/p&gt;
+
+&lt;h2 id=&#34;view-traveltile-map-and-photos&#34;&gt;View Traveltile map and photos&lt;/h2&gt;
+
+&lt;p&gt;Click on the &amp;ldquo;Next&amp;rdquo; buttons in order to look at photos from a particular Traveltile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_japan_map_and_photos.gif&#34; alt=&#34;Traveltile Japan Map and Photos&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;view-traveltile-finances-itinerary-and-notes&#34;&gt;View Traveltile finances, itinerary, and notes&lt;/h2&gt;
+
+&lt;p&gt;Click on the particular card that you wish to explore further. The material is locked so as to avoid changing state within the browser window.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yingw787.github.io/traveltile_docs/images/traveltile_japan_other_features.gif&#34; alt=&#34;Traveltile Japan Other Features&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://yingw787.github.io/traveltile_docs/roadmap/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/roadmap/</guid>
+      <description>
+
+&lt;p&gt;This application&amp;rsquo;s focus is on design and prototyping; several major features are needed before the application can be considered production-ready.&lt;/p&gt;
+
+&lt;h2 id=&#34;user-accounts-authentication&#34;&gt;User accounts/authentication&lt;/h2&gt;
+
+&lt;p&gt;As of now, all created tiles are globally available, and anybody can edit any tile that is within the browser. Authentication using Facebook&amp;rsquo;s Login API to create differentiated user accounts, and the subsequent display of tile subsets limited to the creator and his friend network, will dramatically improve the security, focus, and overall quality of this application.&lt;/p&gt;
+
+&lt;h2 id=&#34;mobile-compatibility&#34;&gt;Mobile compatibility&lt;/h2&gt;
+
+&lt;p&gt;This project was designed for Chrome on Desktop, and is not compatible with either iOS or Android. A port of this application for use on WebKit is highly desirable.&lt;/p&gt;
+
+&lt;h2 id=&#34;database-security&#34;&gt;Database Security&lt;/h2&gt;
+
+&lt;p&gt;Current SQL queries are built with string concatenation. Future versions of this application will likely use a database ORM.&lt;/p&gt;
+
+&lt;h2 id=&#34;migration-of-image-hosting-from-filestack-to-aws-s3&#34;&gt;Migration of Image Hosting from FileStack to AWS S3&lt;/h2&gt;
+
+&lt;p&gt;The current FileStack solution has been unsatisfactory in terms of latency, cost, and scalability. S3 would offer similar benefits as FileStack, Cloudinary, or a similar image hosting service, but with dynamic pricing, better security, and higher uptime determined by an SLA.&lt;/p&gt;
+
+&lt;h2 id=&#34;google-maps-markers&#34;&gt;Google Maps markers&lt;/h2&gt;
+
+&lt;p&gt;The Google Maps component supports the usage of markers; with this and relevant EXIF data from images in the photo album, a trace of the locations traveled to can be presented on the map, providing users with an understanding of the exact geographic locations of the trip.&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;This project is not maintained by me at the moment. If you would like to become the primary maintainer of this application, please fork the application and email me so I can redirect requests and update this webpage. Additionally, please feel free to submit a new &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/issues&#34;&gt;issue&lt;/a&gt; if you happen to see a bug or a &lt;a href=&#34;https://github.com/yingw787/traveltile_opensrc/pulls&#34;&gt;pull request&lt;/a&gt; to suggest a new feature or patch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://yingw787.github.io/traveltile_docs/license/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://yingw787.github.io/traveltile_docs/license/</guid>
+      <description>&lt;p&gt;Copyright &amp;copy; 2016 Ying Wang &lt;a href=&#34;mailto:yingw787@gmail.com&#34;&gt;yingw787@gmail.com&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.&lt;/p&gt;
+
+&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
